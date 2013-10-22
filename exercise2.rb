@@ -19,7 +19,7 @@ total = tip * meal_total # adds tip to meal total
 
 total = total.round(2) # to round the number
 
-puts "Your total plus tip of #{tip_percent} is #{total}"
+puts "Your total with a tip of #{tip_percent} is #{total}"
 
 
 
