@@ -1,25 +1,25 @@
 # Problem 1
 # How would you calculate a good tip for a $55 meal?
 
-puts "What is your bill total before tip?"
+puts "What is your bill total before tip?" # get user input
 
-meal_total = gets.chomp # get user input
+meal_total = gets.chomp 
 
-puts "What is your local tip rate?"
+puts "What is your local tip rate?" # how much tip?
 
 tip_percent = gets.chomp
 
-tip_percent = tip_percent.to_f # convert to float
-
 meal_total = meal_total.to_f # convert to float
 
-tip = 1+(tip_percent/100) # tip formula
+tip_percent = tip_percent.to_f # convert to float
+
+tip = 1+(tip_percent/100) # calculate tip total
 
 total = tip * meal_total # adds tip to meal total
 
 total = total.round(2) # to round the number
 
-puts "Your total with a tip of #{tip_percent} is #{total}"
+puts "Your total bill with a tip of #{tip_percent} is #{total}"
 
 
 
